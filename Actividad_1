@@ -1,0 +1,17 @@
+var gama = prompt("Posicion de Gama");
+var posA = prompt("Posicion A");
+var posB = prompt("Posicion B");
+var a=Math.sqrt((gama-posA)**2);
+var b=Math.sqrt((gama-posB)**2);
+console.log("Posicion A: "+posA);
+console.log("Posicion B: "+posB);
+console.log("Piso de Gama: "+gama);
+  if (a<b) {
+    console.log("Gama, el elevador A está mas cerca de tu piso,toma A.");
+  }
+  if (a>b) {
+    console.log("Gama, el elevador B está mas cerca de tu piso,toma B.");
+  }
+  if (a===b) {
+    console.log("Gama,ambos elevadores están a la misma distancia de ti.");
+  }
